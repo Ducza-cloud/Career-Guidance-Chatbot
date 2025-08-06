@@ -18,7 +18,7 @@ intents = {
 }
 
 # --- SIDEBAR: INTERESTS ---
-st.sidebar.header("🎯 Your Preferences")
+st.sidebar.header(" Your Preferences")
 fav_subjects = st.sidebar.multiselect("Top 3 Subjects", ["Maths", "Science", "English", "History", "Geography", "Art", "Computer Studies", "Business Studies", "Life Sciences", "Economics"])
 interests = st.sidebar.multiselect("Areas of Interest", ["Technology", "Healthcare", "Arts & Design", "Business", "Law & Politics", "Social Work", "Environment & Nature", "Education", "Science & Research"])
 skills = st.sidebar.multiselect("Your Strengths", ["Creative Thinking", "Problem-Solving", "Teamwork", "Writing", "Communication", "Coding", "Analysing", "Hands-on Tasks"])
@@ -26,11 +26,11 @@ personality = st.sidebar.selectbox("Your Personality Type", ["Choose...", "Intro
 values = st.sidebar.multiselect("What matters to you in a job?", ["Helping Others", "High Salary", "Work-Life Balance", "Innovation", "Stability", "Flexibility", "Leadership", "Creativity"])
 
 # --- HEADER ---
-st.title("🎓 Career Guidance Chatbot")
+st.title(" Career Guidance Chatbot")
 st.markdown("Click a quick question or ask your own below. The bot replies instantly using predefined logic and smart suggestions.")
 
 # --- QUICK QUESTIONS ---
-st.subheader("💡 Quick Questions")
+st.subheader(" Quick Questions")
 cols = st.columns(3)
 clicked_intent = None
 for i, question in enumerate(list(intents.keys())):
@@ -38,7 +38,7 @@ for i, question in enumerate(list(intents.keys())):
         clicked_intent = question
 
 # --- USER INPUT ---
-st.subheader("💬 Ask Your Own Question")
+st.subheader(" Ask Your Own Question")
 user_input = st.text_input("Type your question and press Enter:")
 
 # --- DETECT INTENT OR AI-LIKE LOGIC ---
@@ -75,7 +75,7 @@ for sender, message in st.session_state.chat:
         st.write(message)
 
 # --- AI-LIKE CAREER MATCH BASED ON USER PROFILE ---
-st.subheader("🎯 Career Suggestions Based on Your Preferences")
+st.subheader(" Career Suggestions Based on Your Preferences")
 matched_careers = []
 
 # By Subjects + Interests
