@@ -49,4 +49,8 @@ streamlit run app.py
 User: I enjoy helping people and love science
 Bot: You might enjoy careers in Social Work, Teaching, Nursing, or Psychology
 ```
+## License
+MIT License — free to use and modify.
 
+Createdby:
+ChatFusion
